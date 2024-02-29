@@ -18,7 +18,7 @@ def plot_average_temperature(year):
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-weather_data = pd.read_csv('weather.csv')
+weather_data = pd.read_csv('./p4/weather.csv')
 
 weather_data['Ftemp'] = (weather_data['Ktemp'] - 273.15) * (9/5) + 32
 weather_data['Date'] = pd.to_datetime(weather_data['time'])
